@@ -83,34 +83,34 @@
 
 
     // Hero slider background setting
-    function sliderBgSetting() {
-        if ($(".hero-slider .slide-item").length) {
-            $(".hero-slider .slide-item").each(function() {
-                var $this = $(this);
-                var img = $this.find(".slider-bg").attr("src");
+    // function sliderBgSetting() {
+    //     if ($(".hero-slider .slide-item").length) {
+    //         $(".hero-slider .slide-item").each(function() {
+    //             var $this = $(this);
+    //             var img = $this.find(".slider-bg").attr("src");
 
-                $this.css({
-                    backgroundImage: "url("+ img +")",
-                    backgroundSize: "cover",
-                    backgroundPosition: "center center"
-                })
-            });
-        }
-    }
+    //             $this.css({
+    //                 backgroundImage: "url("+ img +")",
+    //                 backgroundSize: "cover",
+    //                 backgroundPosition: "center center"
+    //             })
+    //         });
+    //     }
+    // }
 
-    //Setting hero slider
-    function heroSlider() {
-        if ($(".hero-slider").length) {
-            $(".hero-slider").slick({
-                arrows: true,
-                prevArrow: '<button type="button" class="slick-prev">Previous</button>',
-                nextArrow: '<button type="button" class="slick-next">Next</button>',
-                dots: true,
-                fade: true,
-                cssEase: 'linear'
-            });
-        }
-    }
+    // //Setting hero slider
+    // function heroSlider() {
+    //     if ($(".hero-slider").length) {
+    //         $(".hero-slider").slick({
+    //             arrows: true,
+    //             prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+    //             nextArrow: '<button type="button" class="slick-next">Next</button>',
+    //             dots: true,
+    //             fade: true,
+    //             cssEase: 'linear'
+    //         });
+    //     }
+    // }
 
 
     // set two coloumn height equial
@@ -153,7 +153,7 @@
                 }
 
                 //Active heor slider
-                heroSlider();
+                // heroSlider();
 
             });
         }

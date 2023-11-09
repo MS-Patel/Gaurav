@@ -1630,15 +1630,26 @@ a:focus {
   }
 }
 
+
+
 .hero .slide-item {
-  height: 100vh;
-  min-height: 700px;
+  /* height: 100vh; */
+  width: 100vw;
+  /* min-height: 700px; */
   position: relative;
-  background-repeat: no-repeat;
-  position: relative;
+  /* background-image: url("../images/slider/slide-1.jpeg"); */
+  /* url(/images/slider/slide-1.jpeg) no-repeat calc(100% - 15px) center */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  /* height: 100wh; */
 }
 
-@media (max-width: 1199px) {
+.hero .slide-item img {
+  width: 100vw;
+  max-height: 110vh;
+}
+
+@media (min-width: 1199px) {
   .hero .slide-item {
     min-height: 600px;
   }
@@ -1646,15 +1657,17 @@ a:focus {
 
 @media (max-width: 991px) {
   .hero .slide-item {
-    min-height: 500px;
+    height: fit-content;
   }
 }
+
+
 
 .hero .slide-item .slider-bg {
   display: none;
 }
 
-.hero .slide-item:before {
+/* .hero .slide-item:before {
   content: "";
   background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
@@ -1662,7 +1675,7 @@ a:focus {
   position: absolute;
   left: 0;
   top: 0;
-}
+} */
 
 .hero .slide-item:focus {
   outline: none;
@@ -1785,6 +1798,27 @@ a:focus {
   /*** save the date ***/
   /*** popup save the date circle ***/
 }
+
+
+@media (max-width: 700px) {
+  .hero .wedding-announcement {
+    width: 100%;
+    height: unset;
+    position: absolute;
+    right: 20px;
+    top: 130px;
+    z-index: 101;
+    text-align: center;
+    display: table;
+    /*** save the date ***/
+    /*** popup save the date circle ***/
+  }
+  .hero {
+    min-height: 0;
+    height: fit-content;
+  }
+}
+
 
 .hero .wedding-announcement .couple-name-merried-text {
   display: table-cell;
