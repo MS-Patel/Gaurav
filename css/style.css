@@ -3533,7 +3533,7 @@ a:focus {
 
 .submit-btn button {
   background-color: #5e9a8e;
-  height: 45px;
+  /* height: 45px; */
   line-height: 45px;
   font-size: 16px;
   font-size: 0.88889rem;
