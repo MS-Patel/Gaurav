@@ -1800,25 +1800,6 @@ a:focus {
 }
 
 
-@media (max-width: 700px) {
-  .hero .wedding-announcement {
-    width: 100%;
-    height: unset;
-    position: absolute;
-    right: 20px;
-    top: 130px;
-    z-index: 101;
-    text-align: center;
-    display: table;
-    /*** save the date ***/
-    /*** popup save the date circle ***/
-  }
-  .hero {
-    min-height: 0;
-    height: fit-content;
-  }
-}
-
 
 .hero .wedding-announcement .couple-name-merried-text {
   display: table-cell;
@@ -1891,6 +1872,52 @@ a:focus {
 .hero .wedding-announcement .married-text h4 {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
+
+
+@media (max-width: 700px) {
+  .hero .wedding-announcement {
+    width: 100%;
+    height: unset;
+    position: absolute;
+    right: -20px;
+    top: 100px;
+    z-index: 101;
+    text-align: center;
+    display: table;
+    /*** save the date ***/
+    /*** popup save the date circle ***/
+  }
+  .hero {
+    min-height: 0;
+    height: fit-content;
+  }
+  .hero .wedding-announcement .couple-name-merried-text h2 {
+    font-family: "Great Vibes", cursive;
+    font-size: 90px;
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+    margin: 0 0 0.4em;
+    position: relative;
+    z-index: 10;
+  }
+
+  .hero .wedding-announcement .married-text h4 {
+    font-size: 26px;
+    font-size: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+    display: inline;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 12px 20px;
+    position: relative;
+    z-index: 10;
+    letter-spacing: 2px;
+  }
+}
+
 
 .hero .wedding-announcement .couple-name-merried-text i {
   font-size: 450px;
