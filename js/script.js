@@ -146,11 +146,11 @@
             $('.preloader').delay(100).fadeOut(500, function() {
 
                 //active wow
-                // wow.init();
+                wow.init();
 
-                // if($(".save-the-date").length) {
-                //     popupSaveTheDateCircle();
-                // }
+                if($(".save-the-date").length) {
+                    popupSaveTheDateCircle();
+                }
 
                 //Active heor slider
                 // heroSlider();
@@ -615,7 +615,7 @@
 
             preloader();
 
-            sliderBgSetting();
+            // sliderBgSetting();
 
             toggleMobileNavigation();
 
